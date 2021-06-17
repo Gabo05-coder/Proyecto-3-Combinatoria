@@ -8,7 +8,7 @@ static long num1=0, num2=0, num3=0, numCom=0, factorialP=0, fact=1;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
- while(n!=8)
+ while(n!=7)
  		{
 	 		n=Integer.parseInt(JOptionPane.showInputDialog("Elije el tipo de combinatoria: \n1.Combinatoria sin Repeticion "
 	 				+ "\n2.Combinacion con Repeticion \n3.Variacion sin Repeticion \n4.Variacion con Repeticion "
@@ -17,7 +17,7 @@ static long num1=0, num2=0, num3=0, numCom=0, factorialP=0, fact=1;
 	 		{
 	 		case 1: 
 	 				numObj=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el numero de objetos"));
-	 				numCif=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el tamaño de expresion"));
+	 				numCif=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el tamaÃ±o de expresion"));
 	 				num1=factorial(numObj);
 	 				num2=factorial(numCif);
 	 				num3=factorial(numObj-numCif);
@@ -26,19 +26,19 @@ static long num1=0, num2=0, num3=0, numCom=0, factorialP=0, fact=1;
 	 						+ "\nel resultado es:"+numCom);
 	 				continue;
 	 		case 2: numObj=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el numero de objetos"));
- 					numCif=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el tamaño de expresion"));
+ 					numCif=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el tamaÃ±o de expresion"));
  					num1=factorial(numObj+numCif-1)/factorial(numCif)*(factorial(numObj-1));
  					JOptionPane.showMessageDialog(null,"-Usando el Metodo de Combinatoria con repeticion-\n"
  							+ "el resultado es:"+num1);
  					continue;
 	 		case 3: numObj=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el numero de objetos"));
-					numCif=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el tamaño de expresion"));
+					numCif=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el tamaÃ±o de expresion"));
 					num1= factorial(numObj)/factorial(numObj-numCif);
 					JOptionPane.showMessageDialog(null,"-Usando el Metodo de Variacion sin repeticion-\n "
 							+ "el resultado es: "+num1);
 					continue;
 	 		case 4: numObj=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el numero de objetos"));
-	 				numCif=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el tamaño de expresion"));
+	 				numCif=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el tamaÃ±o de expresion"));
 	 				num1 =numObj^numCif;
 	 				JOptionPane.showMessageDialog(null,"-Usando el Metodo de Variacion con repeticion-\n "
 							+ "el resultado es: "+num1);
