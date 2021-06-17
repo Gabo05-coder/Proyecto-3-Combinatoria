@@ -60,7 +60,7 @@ static long num1=0, num2=0, num3=0, numCom=0, factorialP=0, fact=1;
 	                i=1;a=0;
 	                long calculo2 = factorial(numObj);
 	                long calculofinal=calculo2/fact;
-	                JOptionPane.showMessageDialog(null, "El resultado es: "+calculofinal);
+	                JOptionPane.showMessageDialog(null, "Usando el Metodo de Permutacion con repeticion el resultado es: "+calculofinal);
 	                fact=1;
 	                continue;
 	 		case 7: break;
