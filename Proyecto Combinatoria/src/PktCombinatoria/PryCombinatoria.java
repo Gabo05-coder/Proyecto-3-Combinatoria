@@ -2,9 +2,10 @@ package PktCombinatoria;
 import javax.swing.JOptionPane;
 
 
+
 public class PryCombinatoria {
 static int numObj=0,numCif=0, n=0, i, a; 
-static long num1=0, num2=0, num3=0, numCom=0, factorialP=0, fact=1;
+static float num1=0, num2=0, num3=0, numCom=0, factorialP=0, fact=1;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -59,7 +60,7 @@ static long num1=0, num2=0, num3=0, numCom=0, factorialP=0, fact=1;
 	                }while(a < numCif);
 	                i=1;a=0;
 	                long calculo2 = factorial(numObj);
-	                long calculofinal=calculo2/fact;
+	                float calculofinal=calculo2/fact;
 	                JOptionPane.showMessageDialog(null, "Usando el Metodo de Permutacion con repeticion el resultado es: "+calculofinal);
 	                fact=1;
 	                continue;
@@ -67,6 +68,7 @@ static long num1=0, num2=0, num3=0, numCom=0, factorialP=0, fact=1;
 	 		default:JOptionPane.showMessageDialog(null,"La opcion es Incorrecta");
 			continue;
 	 		}
+	 		
  		}
 	}
 	public static long factorial(int n) {
