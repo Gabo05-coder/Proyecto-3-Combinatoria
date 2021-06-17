@@ -45,7 +45,7 @@ static long num1=0, num2=0, num3=0, numCom=0, factorialP=0, fact=1;
 	 				continue;
 	 		case 5: numObj=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el numero de objetos"));
 					num1= factorial(numObj);
-					JOptionPane.showMessageDialog(null,"-Usando el Metodo de Variacion con repeticion-\n "
+					JOptionPane.showMessageDialog(null,"-Usando el Metodo de Permutacion sin repeticion-\n "
 							+ "el resultado es: "+num1);
 					continue;
 	 		case 6: numObj=Integer.parseInt(JOptionPane.showInputDialog("cantidad de cifras piden"));
